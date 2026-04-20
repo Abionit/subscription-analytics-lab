@@ -16,7 +16,6 @@ Documentation is available in two languages:
 - Dashboard: [src/dashboard.py](src/dashboard.py)
 - SQL queries: [sql/portfolio_queries.sql](sql/portfolio_queries.sql)
 - Sample report: [output/subscription_analytics_report.md](output/subscription_analytics_report.md)
-- Visual artifact: [evidence/v1/README.md](evidence/v1/README.md)
 
 ## Project Highlights
 
@@ -24,24 +23,23 @@ Documentation is available in two languages:
 - Customer-month analytical layer with risk scoring and operational features
 - Monthly KPI exports for MRR, ARPA, churn, and net revenue retention
 - Cohort retention analysis and segment-level performance views
-- SQLite database plus reusable SQL queries
+- SQLite-ready pipeline plus reusable SQL queries
 - Streamlit dashboard for portfolio-ready review
 
-## Project Outputs
+## Repository Scope
 
-- `data/customers.csv`
-- `data/subscriptions.csv`
-- `data/billing_events.csv`
-- `data/daily_product_usage.csv`
-- `data/support_tickets.csv`
-- `output/customer_monthly_metrics.csv`
+This portfolio version keeps the public repository focused on source code, SQL assets, tests, and representative generated outputs.
+
+Running the pipeline locally regenerates the full synthetic source files under `data/`, the customer-month analytical layer, and the SQLite database under `analytics/`.
+
+## Included Outputs
+
 - `output/monthly_kpis.csv`
 - `output/cohort_retention.csv`
 - `output/segment_summary.csv`
 - `output/churn_risk_watchlist.csv`
 - `output/revenue_anomalies.csv`
 - `output/subscription_analytics_report.md`
-- `analytics/subscription_analytics.db`
 
 ## Quick Start
 
