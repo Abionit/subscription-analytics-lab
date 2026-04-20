@@ -1,0 +1,13 @@
+plan_name,region,active_customers,mrr,avg_active_users,avg_csat,avg_ticket_count,high_risk_customers
+Enterprise,LATAM,13,12987,1133.28,4.38,1.31,0
+Scale,LATAM,25,9975,296.79,4.55,0.68,0
+Scale,North America,21,8379,268.58,4.35,1.38,0
+Growth,North America,38,5662,105.57,4.26,1.08,0
+Scale,EMEA,13,5187,245.25,4.24,1.38,0
+Enterprise,North America,5,4995,1347.05,4.84,0.8,0
+Growth,LATAM,34,4917,101.37,4.39,1.18,2
+Enterprise,EMEA,4,3996,657.73,5.0,0.0,0
+Growth,EMEA,14,2086,113.62,4.46,1.21,0
+Starter,North America,28,1372,32.64,4.12,1.43,0
+Starter,LATAM,22,1029,38.24,4.23,1.09,0
+Starter,EMEA,18,833,31.09,4.16,1.33,0
