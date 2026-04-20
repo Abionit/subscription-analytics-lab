@@ -1,47 +1,55 @@
 # Subscription Analytics Lab
 
-Advanced data analytics project focused on subscription revenue, retention, churn risk, cohort analysis, and SQL-backed reporting.
+Portfolio project focused on subscription analytics, KPI reporting, churn risk monitoring, and SQL-backed business analysis.
 
-Documentation is available in two languages:
+Detailed documentation:
 
 - English: [README.en.md](README.en.md)
 - Espanol: [README.es.md](README.es.md)
 
-## Quick Links
+## At A Glance
 
-- English documentation: [README.en.md](README.en.md)
-- Spanish documentation: [README.es.md](README.es.md)
-- Version guide: [CHANGELOG.md](CHANGELOG.md)
-- Pipeline runner: [src/run_pipeline.py](src/run_pipeline.py)
-- Dashboard: [src/dashboard.py](src/dashboard.py)
-- SQL queries: [sql/portfolio_queries.sql](sql/portfolio_queries.sql)
-- Sample report: [output/subscription_analytics_report.md](output/subscription_analytics_report.md)
+- Business question: which signals help explain retention pressure, revenue risk, and customer health in a subscription business?
+- Stack: Python, SQL, SQLite, Streamlit
+- Main outputs: KPI series, cohort retention, segment summary, churn risk watchlist, revenue anomaly report
+- Current snapshot: `232` active customers | `61,418` MRR | `264.73` ARPA | `1.28%` logo churn | `4.33` average CSAT
 
-## Project Highlights
+## What This Project Demonstrates
 
-- Synthetic SaaS data model with customers, subscriptions, billing, usage, and support tickets
-- Customer-month analytical layer with risk scoring and operational features
-- Monthly KPI exports for MRR, ARPA, churn, and net revenue retention
-- Cohort retention analysis and segment-level performance views
-- SQLite-ready pipeline plus reusable SQL queries
-- Streamlit dashboard for portfolio-ready review
+- Reproducible analytics workflow from source data to reporting outputs
+- Customer-month modeling for recurring revenue analysis
+- KPI design for MRR, ARPA, churn, and net revenue retention
+- Cohort retention and churn risk analysis
+- SQL and Python working together in one analytical workflow
+- Dashboarding and report-ready business communication
 
-## Repository Scope
+## Workflow
 
-This portfolio version keeps the public repository focused on source code, SQL assets, tests, and representative generated outputs.
+1. Generate synthetic customer, billing, usage, and support data.
+2. Build the customer-month analytical layer in Python.
+3. Calculate recurring revenue, retention, churn, and risk metrics.
+4. Export representative outputs in CSV and Markdown.
+5. Materialize SQLite tables and views for reusable SQL analysis.
+6. Review results in the Streamlit dashboard.
 
-Running the pipeline locally regenerates the full synthetic source files under `data/`, the customer-month analytical layer, and the SQLite database under `analytics/`.
+## Repository Layout
 
-## Included Outputs
+- [src/](src): pipeline scripts and dashboard
+- [sql/](sql): schema and reusable SQL queries
+- [output/](output): representative analytical outputs
+- [tests/](tests): unit tests for core risk scoring logic
+- [CHANGELOG.md](CHANGELOG.md): version notes
 
-- `output/monthly_kpis.csv`
-- `output/cohort_retention.csv`
-- `output/segment_summary.csv`
-- `output/churn_risk_watchlist.csv`
-- `output/revenue_anomalies.csv`
-- `output/subscription_analytics_report.md`
+## Representative Outputs
 
-## Quick Start
+- KPI series: [output/monthly_kpis.csv](output/monthly_kpis.csv)
+- Cohort retention: [output/cohort_retention.csv](output/cohort_retention.csv)
+- Segment summary: [output/segment_summary.csv](output/segment_summary.csv)
+- Churn watchlist: [output/churn_risk_watchlist.csv](output/churn_risk_watchlist.csv)
+- Revenue anomalies: [output/revenue_anomalies.csv](output/revenue_anomalies.csv)
+- Report preview: [output/subscription_analytics_report.md](output/subscription_analytics_report.md)
+
+## Run Locally
 
 ```bash
 python -m venv .venv
@@ -57,10 +65,17 @@ source .venv/bin/activate
 .venv\Scripts\Activate.ps1
 ```
 
-Install dependencies and run the project:
+Install dependencies and run the workflow:
 
 ```bash
 pip install -r requirements.txt
 python src/run_pipeline.py
 python -m streamlit run src/dashboard.py
+python -m unittest discover -s tests
 ```
+
+## Notes
+
+This public portfolio version stays lightweight on purpose.
+
+Running the pipeline locally regenerates the source data files under `data/`, the customer-month analytical layer, and the SQLite database under `analytics/`.
