@@ -179,10 +179,3 @@ La capa SQL esta pensada para soportar:
 - mezcla de planes
 - salud regional del negocio
 
-## Temas Para Entrevista
-
-1. Por que el grano cliente-mes es util para analitica y reporting
-2. Como la retencion por cohortes cambia la lectura del crecimiento
-3. Que senales son utiles para estimar riesgo de churn
-4. Por que la calidad del revenue importa mas alla del crecimiento bruto
-5. Como este proyecto podria escalar hacia un warehouse o flujo BI mas grande
