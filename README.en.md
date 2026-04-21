@@ -179,10 +179,3 @@ The SQL layer is designed to support:
 - plan mix analysis
 - regional health monitoring
 
-## Interview Discussion Areas
-
-1. Why the customer-month grain is useful for analytics and reporting
-2. How cohort retention changes the interpretation of growth
-3. Which signals are useful for churn risk scoring
-4. Why revenue quality matters beyond raw revenue growth
-5. How this project could evolve into a warehouse or BI workflow
