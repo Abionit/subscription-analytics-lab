@@ -1,6 +1,6 @@
 # Subscription Analytics Lab - Revenue, Retention, and Churn Analysis
 
-Advanced portfolio project built to show how SQL, Python, and reporting can be used to monitor subscription revenue, retention, and customer health.
+End-to-end analytics project built to show how SQL, Python, and reporting can be used to monitor subscription revenue, retention, and customer health.
 
 ## Business Question
 
@@ -90,11 +90,9 @@ Each customer-month record includes a risk score derived from:
 
 The analytics layer flags unusual revenue periods using MRR growth, churn, and NRR behavior.
 
-## Why This Project Works Well In A Portfolio
+## Review Value
 
-This repository is useful for recruiter review and technical review because it goes beyond isolated notebook exploration.
-
-It shows:
+This repository goes beyond isolated notebook exploration. It shows:
 
 - a reproducible workflow
 - business-oriented metrics
@@ -103,7 +101,7 @@ It shows:
 - a pipeline that materializes SQLite locally
 - a dashboard that surfaces actionable signals
 
-That makes it a strong project for roles involving `data analysis`, `business analytics`, `SQL`, `reporting`, and early `analytics engineering` foundations.
+That makes the project relevant for roles involving `data analysis`, `business analytics`, `SQL`, `reporting`, and early `analytics engineering` foundations.
 
 ## Repository Structure
 
@@ -155,7 +153,7 @@ python -m unittest discover -s tests
 
 ## Project Outputs
 
-The public portfolio version keeps the repository lightweight. Running the pipeline regenerates the full source data, the customer-month analytical layer, and the SQLite database locally.
+The repository keeps generated raw data lightweight. Running the pipeline regenerates the full source data, the customer-month analytical layer, and the SQLite database locally.
 
 - KPI series: [output/monthly_kpis.csv](output/monthly_kpis.csv)
 - Cohort retention: [output/cohort_retention.csv](output/cohort_retention.csv)
@@ -169,13 +167,12 @@ The public portfolio version keeps the repository lightweight. Running the pipel
 The repository includes reusable SQL assets:
 
 - schema and views: [sql/schema.sql](sql/schema.sql)
-- portfolio query set: [sql/portfolio_queries.sql](sql/portfolio_queries.sql)
+- analytical query set: [sql/portfolio_queries.sql](sql/portfolio_queries.sql)
 
-The SQL layer is designed to support:
+The SQL layer supports:
 
 - latest KPI inspection
 - retention review
 - risk watchlists
 - plan mix analysis
 - regional health monitoring
-
