@@ -1,6 +1,6 @@
 # Subscription Analytics Lab - Analisis de Revenue, Retencion y Churn
 
-Proyecto avanzado de portafolio pensado para demostrar como SQL, Python y reporting pueden usarse para monitorear revenue, retencion y salud del cliente en un negocio de suscripcion.
+Proyecto de analitica de suscripciones que muestra como SQL, Python y reporting pueden usarse para monitorear revenue, retencion y salud del cliente.
 
 ## Pregunta De Negocio
 
@@ -90,11 +90,9 @@ Cada registro cliente-mes incluye un score de riesgo derivado de:
 
 La capa analitica marca periodos inusuales usando crecimiento de MRR, churn y comportamiento de NRR.
 
-## Por Que Funciona Bien Para Portafolio
+## Valor Para Revision
 
-Este repositorio sirve bien tanto para reclutadores como para revision tecnica porque va mas alla de una exploracion aislada en notebooks.
-
-Muestra:
+Este repositorio va mas alla de una exploracion aislada en notebooks. Muestra:
 
 - un flujo reproducible
 - metricas orientadas a negocio
@@ -103,7 +101,7 @@ Muestra:
 - un pipeline que materializa SQLite de forma local
 - un dashboard que resume senales accionables
 
-Eso lo vuelve un proyecto fuerte para roles de `data analysis`, `business analytics`, `SQL`, `reporting` y bases de `analytics engineering`.
+Eso lo vuelve relevante para roles de `data analysis`, `business analytics`, `SQL`, `reporting` y bases de `analytics engineering`.
 
 ## Estructura Del Repositorio
 
@@ -155,7 +153,7 @@ python -m unittest discover -s tests
 
 ## Salidas Del Proyecto
 
-La version publica del portafolio mantiene el repositorio liviano. Al ejecutar el pipeline se regeneran de forma local los archivos fuente, la capa analitica cliente-mes y la base SQLite.
+El repositorio mantiene livianos los datos generados. Al ejecutar el pipeline se regeneran de forma local los archivos fuente, la capa analitica cliente-mes y la base SQLite.
 
 - Serie de KPIs: [output/monthly_kpis.csv](output/monthly_kpis.csv)
 - Retencion por cohortes: [output/cohort_retention.csv](output/cohort_retention.csv)
@@ -169,13 +167,12 @@ La version publica del portafolio mantiene el repositorio liviano. Al ejecutar e
 El repositorio incluye activos SQL reutilizables:
 
 - esquema y vistas: [sql/schema.sql](sql/schema.sql)
-- consultas del portafolio: [sql/portfolio_queries.sql](sql/portfolio_queries.sql)
+- consultas analiticas: [sql/portfolio_queries.sql](sql/portfolio_queries.sql)
 
-La capa SQL esta pensada para soportar:
+La capa SQL soporta:
 
 - revision de KPIs recientes
 - analisis de retencion
 - listas de riesgo
 - mezcla de planes
 - salud regional del negocio
-
