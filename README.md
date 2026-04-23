@@ -1,6 +1,6 @@
 # Subscription Analytics Lab
 
-Portfolio project focused on subscription analytics, KPI reporting, churn risk monitoring, and SQL-backed business analysis.
+End-to-end analytics project focused on subscription revenue, retention, churn risk monitoring, and SQL-backed business reporting.
 
 Detailed documentation:
 
@@ -76,6 +76,4 @@ python -m unittest discover -s tests
 
 ## Notes
 
-This public portfolio version stays lightweight on purpose.
-
-Running the pipeline locally regenerates the source data files under `data/`, the customer-month analytical layer, and the SQLite database under `analytics/`.
+The repository stores reproducible code and representative outputs. Running the pipeline locally regenerates the source data files under `data/`, the customer-month analytical layer, and the SQLite database under `analytics/`.
