@@ -7,6 +7,15 @@ Detailed documentation:
 - English: [README.en.md](README.en.md)
 - Espanol: [README.es.md](README.es.md)
 
+## Fast Review
+
+If you only want the strongest evidence, start with these:
+
+- Report preview: [output/subscription_analytics_report.md](output/subscription_analytics_report.md)
+- SQL queries: [sql/portfolio_queries.sql](sql/portfolio_queries.sql)
+- KPI outputs: [output/monthly_kpis.csv](output/monthly_kpis.csv)
+- Churn watchlist: [output/churn_risk_watchlist.csv](output/churn_risk_watchlist.csv)
+
 ## At A Glance
 
 - Business question: which signals help explain retention pressure, revenue risk, and customer health in a subscription business?
