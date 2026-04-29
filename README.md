@@ -1,6 +1,6 @@
 # Subscription Analytics Lab
 
-End-to-end analytics project focused on subscription revenue, retention, churn risk monitoring, and SQL-backed business reporting.
+Portfolio analytics case study that turns subscription data into KPI reporting, churn monitoring, cohort analysis, and revenue review.
 
 Detailed documentation:
 
@@ -9,18 +9,31 @@ Detailed documentation:
 
 ## Fast Review
 
-If you only want the strongest evidence, start with these:
+If you only want the strongest evidence, open these first:
 
 - Report preview: [output/subscription_analytics_report.md](output/subscription_analytics_report.md)
 - SQL queries: [sql/portfolio_queries.sql](sql/portfolio_queries.sql)
 - KPI outputs: [output/monthly_kpis.csv](output/monthly_kpis.csv)
 - Churn watchlist: [output/churn_risk_watchlist.csv](output/churn_risk_watchlist.csv)
 
+## Best Role Fit
+
+- Data Analyst
+- BI / Reporting Analyst
+- Operations Analyst with KPI and recurring-metrics ownership
+
+## Business Questions
+
+- Which customer signals explain retention pressure and churn risk?
+- Which cohorts retain better or decay faster over time?
+- Where is recurring revenue at risk?
+- Which accounts should move into a watchlist for review?
+
 ## At A Glance
 
-- Business question: which signals help explain retention pressure, revenue risk, and customer health in a subscription business?
+- Analytical focus: recurring revenue, retention, churn risk, segmentation, and customer health
 - Stack: Python, SQL, SQLite, Streamlit
-- Main outputs: KPI series, cohort retention, segment summary, churn risk watchlist, revenue anomaly report
+- Main outputs: KPI series, cohort retention, segment summary, churn watchlist, revenue anomaly report
 - Current snapshot: `232` active customers | `61,418` MRR | `264.73` ARPA | `1.28%` logo churn | `4.33` average CSAT
 
 ## What This Project Demonstrates
@@ -30,7 +43,7 @@ If you only want the strongest evidence, start with these:
 - KPI design for MRR, ARPA, churn, and net revenue retention
 - Cohort retention and churn risk analysis
 - SQL and Python working together in one analytical workflow
-- Dashboarding and report-ready business communication
+- Dashboard-ready outputs and report-ready business communication
 
 ## Workflow
 
@@ -85,4 +98,6 @@ python -m unittest discover -s tests
 
 ## Notes
 
-The repository stores reproducible code and representative outputs. Running the pipeline locally regenerates the source data files under `data/`, the customer-month analytical layer, and the SQLite database under `analytics/`.
+This public portfolio version stays lightweight on purpose.
+
+Running the pipeline locally regenerates the source data files under `data/`, the customer-month analytical layer, and the SQLite database under `analytics/`.
