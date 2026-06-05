@@ -1,0 +1,39 @@
+name: Change proposal
+description: Propose a pipeline, quality, analytics, or infrastructure improvement
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Explain the business need, operational risk, or engineering limitation.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected outcome
+      description: Describe the measurable or observable result.
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed approach
+      description: Outline the sources, transformations, quality controls, AWS services, or outputs involved.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List the conditions that would demonstrate the change is complete.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Data, security, and cost impact
+      description: Note schema changes, IAM requirements, sensitive data handling, scalability, or AWS cost considerations.

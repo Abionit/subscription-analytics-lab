@@ -1,6 +1,35 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 .venv/
+venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated project data
 data/
 analytics/
+
+# AWS and infrastructure tooling
 .aws-sam/
+cdk.out/
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -17,7 +17,7 @@ Detailed documentation:
 
 ## Best Role Fit
 
-- Junior Data Engineer
+- Data Engineer
 - Analytics Engineer
 - Data Analyst
 - BI / Reporting Analyst
@@ -78,6 +78,10 @@ The AWS implementation is defined as code. It should only be described as deploy
 - [docs/](docs): architecture and deployment documentation
 - [output/](output): representative analytical and quality outputs
 - [tests/](tests): unit tests
+
+## Engineering Workflow
+
+Changes are developed in focused branches, prepared for validation through GitHub Actions, reviewed through pull requests, and integrated with squash merges. Commit messages follow a consistent `type: description` format. See [CONTRIBUTING.md](CONTRIBUTING.md) for the branch, validation, and review conventions used in this repository.
 
 ## Representative Outputs
 
