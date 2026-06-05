@@ -1,0 +1,46 @@
+name: Defect report
+description: Report incorrect pipeline, data quality, analytical, or infrastructure behavior
+title: "fix: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the observed behavior and its business or technical impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Include the command, input, query, or workflow that reproduces the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add relevant logs, quality results, screenshots, or sample output without credentials or private data.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Local Python pipeline
+        - Data quality
+        - SQL and analytics
+        - Streamlit dashboard
+        - AWS Glue and S3
+        - Athena or Redshift
+        - Infrastructure as code
+        - Documentation
+    validations:
+      required: true
