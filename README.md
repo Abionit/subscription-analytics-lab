@@ -1,7 +1,5 @@
 # Subscription Analytics Lab
 
-[![CI](https://github.com/Abionit/subscription-analytics-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/Abionit/subscription-analytics-lab/actions/workflows/tests.yml)
-
 Data engineering and analytics case study that consolidates subscription data into validated, query-ready datasets for KPI reporting, churn monitoring, cohort analysis, and revenue review.
 
 Detailed documentation:
@@ -83,7 +81,7 @@ The AWS implementation is defined as code. It should only be described as deploy
 
 ## Engineering Workflow
 
-Changes are developed in focused branches, validated by GitHub Actions, reviewed through pull requests, and integrated with squash merges. Commit messages follow a consistent `type: description` format. See [CONTRIBUTING.md](CONTRIBUTING.md) for the branch, validation, and review conventions used in this repository.
+Changes are developed in focused branches, prepared for validation through GitHub Actions, reviewed through pull requests, and integrated with squash merges. Commit messages follow a consistent `type: description` format. See [CONTRIBUTING.md](CONTRIBUTING.md) for the branch, validation, and review conventions used in this repository.
 
 ## Representative Outputs
 
