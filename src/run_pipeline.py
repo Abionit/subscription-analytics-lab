@@ -17,6 +17,7 @@ def run_step(script_name: str) -> None:
 
 def main() -> None:
     run_step("generate_sample_data.py")
+    run_step("data_quality.py")
     run_step("build_analytics.py")
     print("Subscription analytics pipeline finished successfully.")
 
