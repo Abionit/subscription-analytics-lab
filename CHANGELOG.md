@@ -1,5 +1,14 @@
 # Changelog
 
+This project records notable changes by release. Versioned entries describe completed capabilities; work awaiting a release remains under `Unreleased`.
+
+## Unreleased
+
+- branch and commit conventions
+- pull request and issue templates
+- CI validation for Python, unit tests, and CloudFormation
+- repository rules for credentials, generated data, tooling, and line endings
+
 ## v2
 
 Added a data engineering path with:
